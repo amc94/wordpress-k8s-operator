@@ -1,0 +1,21 @@
+[32mINFO    [0m pytest_operator.plugin:plugin.py:951 Model status:
+
+Model    Controller                Cloud/Region        Version  SLA          Timestamp
+testing  github-pr-b9ebd-microk8s  microk8s/localhost  2.9.57   unsupported  15:52:18Z
+
+App            Version  Status  Scale  Charm          Channel     Rev  Address         Exposed  Message
+mysql-k8s      8.0.44   active      1  mysql-k8s      8.0/stable  400  10.152.183.208  no       
+wordpress-k8s  6.8.1    active      1  wordpress-k8s                0  10.152.183.248  no       
+
+Unit              Workload  Agent  Address     Ports  Message
+mysql-k8s/0*      active    idle   10.1.97.78         
+wordpress-k8s/0*  active    idle   10.1.97.76         
+
+
+[32mINFO    [0m pytest_operator.plugin:plugin.py:957 Juju error logs:
+
+unit-mysql-k8s-0: 15:50:08 ERROR unit.mysql-k8s/0.juju-log Failed to get cluster labels
+unit-mysql-k8s-0: 15:50:09 ERROR unit.mysql-k8s/0.juju-log Failed to get cluster labels
+unit-mysql-k8s-0: 15:50:30 ERROR unit.mysql-k8s/0.juju-log Failed to get cluster labels
+
+[32mINFO    [0m pytest_operator.plugin:plugin.py:1039 Forgetting model main...
